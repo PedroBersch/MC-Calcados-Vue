@@ -15,23 +15,23 @@ const router = createRouter({
       component: HomeView,
     },
     {
-      path: "/jobs",
-      name: "jobs",
+      path: "/products",
+      name: "produtos",
       component: JobsView,
     },
     {
-      path: "/jobs/:id",
-      name: "job",
+      path: "/products/:id",
+      name: "produto",
       component: JobView,
     },
     {
-      path: "/jobs/add",
-      name: "add-job",
+      path: "/products/add",
+      name: "add-produto",
       component: AddJobView,
     },
     {
-      path: "/jobs/edit/:id",
-      name: "edit-job",
+      path: "/products/edit/:id",
+      name: "edit-produto",
       component: EditJobView,
     },
     {

@@ -4,7 +4,7 @@ import HomeCards from "@/components/HomeCards.vue";
 import JobListings from "@/components/JobListings.vue";
 </script>
 <template>
-  <Hero title="Teste Title" subtitle="Teste Subtitle" />
+  <Hero title="MC Calçados" subtitle="Loja Mc Calçados" />
   <HomeCards />
   <JobListings :limit="3" , :showButton="true" />
 </template>

@@ -3,7 +3,7 @@ import { defineProps, ref, computed } from "vue";
 import { RouterLink } from "vue-router";
 
 const props = defineProps({
-  job: Object,
+  product: Object,
 });
 
 const showFullDescription = ref(false);
@@ -13,7 +13,7 @@ const toggleFullDescription = () => {
 };
 
 const truncatedDescription = computed(() => {
-  let description = props.job.description;
+  let description = props.product.description;
   if (!showFullDescription.value) {
     description = description.substring(0, 90) + "...";
   }
@@ -25,17 +25,17 @@ const truncatedDescription = computed(() => {
     <div class="p-4 flex">
       <div class="flex-1">
         <div class="mb-6">
-          <div class="text-gray-600 my-2">{{ job.type }}</div>
-          <h3 class="text-xl font-bold">{{ job.title }}</h3>
+          <div class="text-gray-600 my-2">{{ product.type }}</div>
+          <h3 class="text-xl font-bold">{{ product.title }}</h3>
         </div>
         <div class="ml-4 w-81 h-80 mr-4">
           <img
-            :src="job.image"
+            :src="product.image"
             alt="Job Image"
             class="object-cover w-full h-full rounded-lg"
           />
         </div>
-        <div class="mb-5">
+        <div class="mb-5 mt-1">
           <div>{{ truncatedDescription }}</div>
           <button
             @click="toggleFullDescription"
@@ -44,17 +44,17 @@ const truncatedDescription = computed(() => {
             {{ showFullDescription ? "Less" : "More" }}
           </button>
         </div>
-        <h3 class="text-green-500 mb-2">{{ job.salary }} / Year</h3>
+        <h3 class="text-green-500 mb-2">{{ product.price }}</h3>
 
         <div class="border border-gray-100 mb-5"></div>
 
         <div class="flex flex-col lg:flex-row justify-between mb-4">
           <div class="text-orange-700 mb-3">
             <i class="pi pi-map-marker text-orange-500"></i>
-            {{ job.location }}
+            {{ product.location }}
           </div>
           <RouterLink
-            :to="'/jobs/' + job.id"
+            :to="'/products/' + product.id"
             class="h-[36px] bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg text-center text-sm"
           >
             Read More

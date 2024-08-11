@@ -1,0 +1,93 @@
+{
+  "products": [
+    {
+      "title": "Tenis Masculino",
+      "type": "Outono",
+      "location": "Charqueadas, RS",
+      "description": "Lorem ipsum dolor sit amet. Aut dicta voluptatem non cumque reprehenderit ea numquam quisquam. Qui assumenda unde ea quia corporis aut tenetur earum non voluptas sunt. Ut porro voluptatem cum modi voluptas non labore numquam qui odio enim ut suscipit voluptatum est error veritatis.",
+      "price": "R$ 199,00",
+      "company": {
+        "name": "MC Calçados",
+        "description": "Lorem ipsum dolor sit amet. Aut dicta voluptatem non cumque reprehenderit ea numquam quisquam. Qui assumenda unde ea quia corporis aut tenetur earum non voluptas sunt. Ut porro voluptatem cum modi voluptas non labore numquam qui odio enim ut suscipit voluptatum est error veritatis..",
+        "contactEmail": "mccalcados@mccalados.com",
+        "contactPhone": "555-555-5555"
+      },
+      "id": "1"
+    },
+    {
+      "title": "Tenis Masculino",
+      "type": "Verão",
+      "location": "Charqueadas, RS",
+      "description": "Lorem ipsum dolor sit amet. Aut dicta voluptatem non cumque reprehenderit ea numquam quisquam. Qui assumenda unde ea quia corporis aut tenetur earum non voluptas sunt. Ut porro voluptatem cum modi voluptas non labore numquam qui odio enim ut suscipit voluptatum est error veritatis.",
+      "price": "R$ - 149,99",
+      "image": "src/assets/img/elementor-placeholder-image.png",
+      "company": {
+        "name": "MC Calçados",
+        "description": "Lorem ipsum dolor sit amet. Aut dicta voluptatem non cumque reprehenderit ea numquam quisquam. Qui assumenda unde ea quia corporis aut tenetur earum non voluptas sunt. Ut porro voluptatem cum modi voluptas non labore numquam qui odio enim ut suscipit voluptatum est error veritatis..",
+        "contactEmail": "mccalcados@mccalados.com",
+        "contactPhone": "555-555-5555"
+      },
+      "id": "2"
+    },
+    {
+      "title": "Tenis Masculino",
+      "type": "Verão",
+      "location": "Charqueadas, RS",
+      "description": "Lorem ipsum dolor sit amet. Aut dicta voluptatem non cumque reprehenderit ea numquam quisquam. Qui assumenda unde ea quia corporis aut tenetur earum non voluptas sunt. Ut porro voluptatem cum modi voluptas non labore numquam qui odio enim ut suscipit voluptatum est error veritatis.",
+      "price": "R$ - 149,99",
+      "image": "src/assets/img/elementor-placeholder-image.png",
+      "company": {
+        "name": "MC Calçados",
+        "description": "Lorem ipsum dolor sit amet. Aut dicta voluptatem non cumque reprehenderit ea numquam quisquam. Qui assumenda unde ea quia corporis aut tenetur earum non voluptas sunt. Ut porro voluptatem cum modi voluptas non labore numquam qui odio enim ut suscipit voluptatum est error veritatis..",
+        "contactEmail": "mccalcados@mccalados.com",
+        "contactPhone": "555-555-5555"
+      },
+      "id": "3"
+    },
+    {
+      "title": "Tenis Masculino",
+      "type": "Verão",
+      "location": "Charqueadas, RS",
+      "description": "Lorem ipsum dolor sit amet. Aut dicta voluptatem non cumque reprehenderit ea numquam quisquam. Qui assumenda unde ea quia corporis aut tenetur earum non voluptas sunt. Ut porro voluptatem cum modi voluptas non labore numquam qui odio enim ut suscipit voluptatum est error veritatis.",
+      "price": "R$ - 149,99",
+      "image": "src/assets/img/elementor-placeholder-image.png",
+      "company": {
+        "name": "MC Calçados",
+        "description": "Lorem ipsum dolor sit amet. Aut dicta voluptatem non cumque reprehenderit ea numquam quisquam. Qui assumenda unde ea quia corporis aut tenetur earum non voluptas sunt. Ut porro voluptatem cum modi voluptas non labore numquam qui odio enim ut suscipit voluptatum est error veritatis..",
+        "contactEmail": "mccalcados@mccalados.com",
+        "contactPhone": "555-555-5555"
+      },
+      "id": "4"
+    },
+    {
+      "title": "Tenis Masculino",
+      "type": "Verão",
+      "location": "Charqueadas, RS",
+      "description": "Lorem ipsum dolor sit amet. Aut dicta voluptatem non cumque reprehenderit ea numquam quisquam. Qui assumenda unde ea quia corporis aut tenetur earum non voluptas sunt. Ut porro voluptatem cum modi voluptas non labore numquam qui odio enim ut suscipit voluptatum est error veritatis.",
+      "price": "R$ - 149,99",
+      "image": "src/assets/img/elementor-placeholder-image.png",
+      "company": {
+        "name": "MC Calçados",
+        "description": "Lorem ipsum dolor sit amet. Aut dicta voluptatem non cumque reprehenderit ea numquam quisquam. Qui assumenda unde ea quia corporis aut tenetur earum non voluptas sunt. Ut porro voluptatem cum modi voluptas non labore numquam qui odio enim ut suscipit voluptatum est error veritatis..",
+        "contactEmail": "mccalcados@mccalados.com",
+        "contactPhone": "555-555-5555"
+      },
+      "id": "5"
+    },
+    {
+      "title": "Tenis Masculino",
+      "type": "Verão",
+      "location": "Charqueadas, RS",
+      "description": "Lorem ipsum dolor sit amet. Aut dicta voluptatem non cumque reprehenderit ea numquam quisquam. Qui assumenda unde ea quia corporis aut tenetur earum non voluptas sunt. Ut porro voluptatem cum modi voluptas non labore numquam qui odio enim ut suscipit voluptatum est error veritatis.",
+      "price": "R$ - 149,99",
+      "image": "src/assets/img/elementor-placeholder-image.png",
+      "company": {
+        "name": "MC Calçados",
+        "description": "Lorem ipsum dolor sit amet. Aut dicta voluptatem non cumque reprehenderit ea numquam quisquam. Qui assumenda unde ea quia corporis aut tenetur earum non voluptas sunt. Ut porro voluptatem cum modi voluptas non labore numquam qui odio enim ut suscipit voluptatum est error veritatis..",
+        "contactEmail": "mccalcados@mccalados.com",
+        "contactPhone": "555-555-5555"
+      },
+      "id": "6"
+    }
+  ]
+}

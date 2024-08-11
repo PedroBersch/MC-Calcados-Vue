@@ -7,13 +7,13 @@ import axios from 'axios';
 
 const route = useRoute();
 
-const jobId = route.params.id;
+const productId = route.params.id;
 
 const form = reactive({
-  type: 'Full-Time',
+  type: 'Verão',
   title: '',
   description: '',
-  salary: '',
+  price: '',
   location: '',
   company: {
     name: '',
@@ -24,19 +24,19 @@ const form = reactive({
 });
 
 const state = reactive({
-  job: {},
+  product: {},
   isLoading: true,
 });
 
 const toast = useToast();
 
 const handleSubmit = async () => {
-  const updatedJob = {
+  const updatedProduct = {
     title: form.title,
     type: form.type,
     location: form.location,
     description: form.description,
-    salary: form.salary,
+    price: form.price,
     company: {
       name: form.company.name,
       description: form.company.description,
@@ -46,31 +46,31 @@ const handleSubmit = async () => {
   };
 
   try {
-    const response = await axios.put(`/api/jobs/${jobId}`, updatedJob);
-    toast.success('Job Updated Successfully');
-    router.push(`/jobs/${response.data.id}`);
+    const response = await axios.put(`/api/products/${productId}`, updatedProduct);
+    toast.success('product Updated Successfully');
+    router.push(`/products/${response.data.id}`);
   } catch (error) {
-    console.error('Error fetching job', error);
-    toast.error('Job Was Not Added');
+    console.error('Error fetching product', error);
+    toast.error('Product Was Not Added');
   }
 };
 
 onMounted(async () => {
   try {
-    const response = await axios.get(`/api/jobs/${jobId}`);
-    state.job = response.data;
+    const response = await axios.get(`/api/products/${productId}`);
+    state.product = response.data;
     // Populate inputs
-    form.type = state.job.type;
-    form.title = state.job.title;
-    form.description = state.job.description;
-    form.salary = state.job.salary;
-    form.location = state.job.location;
-    form.company.name = state.job.company.name;
-    form.company.description = state.job.company.description;
-    form.company.contactEmail = state.job.company.contactEmail;
-    form.company.contactPhone = state.job.company.contactPhone;
+    form.type = state.product.type;
+    form.title = state.product.title;
+    form.description = state.product.description;
+    form.price = state.product.price;
+    form.location = state.product.location;
+    form.company.name = state.product.company.name;
+    form.company.description = state.product.company.description;
+    form.company.contactEmail = state.product.company.contactEmail;
+    form.company.contactPhone = state.product.company.contactPhone;
   } catch (error) {
-    console.error('Error fetching job', error);
+    console.error('Error fetching product', error);
   } finally {
     state.isLoading = false;
   }
@@ -84,11 +84,11 @@ onMounted(async () => {
         class="bg-white px-6 py-8 mb-4 shadow-md rounded-md border m-4 md:m-0"
       >
         <form @submit.prevent="handleSubmit">
-          <h2 class="text-3xl text-center font-semibold mb-6">Edit Job</h2>
+          <h2 class="text-3xl text-center font-semibold mb-6">Edit product</h2>
 
           <div class="mb-4">
             <label for="type" class="block text-gray-700 font-bold mb-2"
-              >Job Type</label
+              >product Type</label
             >
             <select
               v-model="form.type"
@@ -97,16 +97,16 @@ onMounted(async () => {
               class="border rounded w-full py-2 px-3"
               required
             >
-              <option value="Full-Time">Full-Time</option>
-              <option value="Part-Time">Part-Time</option>
-              <option value="Remote">Remote</option>
-              <option value="Internship">Internship</option>
+            <option value="Verao">Verao</option>
+              <option value="Inverno">Inverno</option>
+              <option value="Outono">Outono</option>
+              <option value="Primavera">Primavera</option>
             </select>
           </div>
 
           <div class="mb-4">
             <label class="block text-gray-700 font-bold mb-2"
-              >Job Listing Name</label
+              >Product Listing Name</label
             >
             <input
               type="text"
@@ -134,26 +134,18 @@ onMounted(async () => {
 
           <div class="mb-4">
             <label for="type" class="block text-gray-700 font-bold mb-2"
-              >Salary</label
+              >price</label
             >
             <select
-              id="salary"
-              v-model="form.salary"
-              name="salary"
+              id="Product"
+              v-model="form.price"
+              name="Product"
               class="border rounded w-full py-2 px-3"
               required
             >
-              <option value="Under $50K">under $50K</option>
-              <option value="$50K - $60K">$50 - $60K</option>
-              <option value="$60K - $70K">$60 - $70K</option>
-              <option value="$70K - $80K">$70 - $80K</option>
-              <option value="$80K - $90K">$80 - $90K</option>
-              <option value="$90K - $100K">$90 - $100K</option>
-              <option value="$100K - $125K">$100 - $125K</option>
-              <option value="$125K - $150K">$125 - $150K</option>
-              <option value="$150K - $175K">$150 - $175K</option>
-              <option value="$175K - $200K">$175 - $200K</option>
-              <option value="Over $200K">Over $200K</option>
+            <option value="R$ 149,00">R$ 149,00</option>
+              <option value="R$ 199,00">R$ 199,00</option>
+              <option value="R$ 249,00">R$ 249,00</option>
             </select>
           </div>
 
@@ -239,7 +231,7 @@ onMounted(async () => {
               class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full w-full focus:outline-none focus:shadow-outline"
               type="submit"
             >
-              Update Job
+              Update Product
             </button>
           </div>
         </form>

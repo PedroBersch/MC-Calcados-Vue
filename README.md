@@ -1,29 +1,27 @@
-# vue-crash
+# Projeto FrameWorks de Front-End
 
-This template should help get you started developing with Vue 3 in Vite.
+Projeto **MC Calçados** tem como escopo ser uma aplicação tanto para cliente visualizarem, quanto para funcionario  organizarem produtos.
 
-## Recommended IDE Setup
+## Tecnologias
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+- Vue.js
+- Tailwind
+- JsonServer
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
+## Como rodar o projeto
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+### Rodar Front-end
 
 ```sh
 npm run dev
 ```
 
-### Compile and Minify for Production
+### Rodar Back-end
 
 ```sh
-npm run build
+npm run server
 ```

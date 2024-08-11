@@ -9,7 +9,7 @@ import { RouterLink } from "vue-router";
     <RouterLink
       to="/"
       class="text-white bg-green-700 hover:bg-green-900 rounded-md px-3 py-2 mt-4"
-      >Go Back</RouterLink
+      >VORRRTA</RouterLink
     >
   </section>
 </template>
